@@ -39,7 +39,10 @@
         <p>This is a simple HTML page hosted on Git.</p>
     </main>
     <footer>
-        <p>&copy; 2023 Gurkirat Singh. All rights reserved.</p>
+        <p>&copy; <span id="year"></span> Gurkirat Singh. All rights reserved.</p>
     </footer>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
