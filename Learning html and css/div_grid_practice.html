@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> grid Practice</title>
+      <style>
+        /* div{
+          background-color: grey;
+        } */
+        .div1_class{
+          
+        }
+        </style>
+  </head>
+  <body>
+    <div style="background-color: lightblue; display: inline;">without grid1</div>
+    <div style="background-color: lightpink; display: inline;padding: 4px;">without grid2</div>
+    <div style="background-color: lightgreen; margin-bottom: 50px;padding:10px;">div3
+      <div style="background-color: lightcoral; display: inline;">without grid3.1</div>
+      <div style="background-color: lightseagreen; display: inline;"><p style="color: blue;display: inline; font-size: 25px;">without grid3.2</p></div>
+      <div style="background-color: lightcoral;">div3.3
+        <div style="background-color: lightseagreen;display: inline;">without grid3.3.1</div>
+        <div style="background-color: lightyellow;">without grid3.3.2</div>
+      </div>
+      <div style="background-color: lightcyan;display: inline;">without grid3.4
+        <div style="background-color: blueviolet;display: inline;">without grid3.4.1</div>
+      </div>
+      <div style="background-color: lightgray;display: inline;">without grid3.5
+        <div style="background-color: lightgoldenrodyellow;display: inline;">without grid3.5.1</div>
+      </div>
+      <!-- when having more than one column using div we can't create rows inside the colums. 
+       workaround is to create mutliple div without display inline and create columns in it -->
+    </div>
+    <div style="display: grid;
+      grid-template-columns: 100px 100px;">
+      <div style="background-color: aqua;">
+          grid1.1 
+      </div>
+      <div style="background-color: lightpink;">
+          grid1.2
+      </div>
+    </div>
+    <!-- layout is more rigid for grid -->
+    <div style="
+      margin-top: 50px;
+      display: grid;
+      grid-template-columns: 100px 100px 1000px;">
+      <div style="background-color: aqua;">
+        grid2.1
+      </div>
+      <div style="background-color: lightpink;">
+        grid2.2
+      </div>
+      <div style="background-color: tomato;">
+       grid2.3
+      </div>
+      <!-- <div style="background-color:burlywood;">
+        div6
+      </div> -->
+    </div>
+    <div style="
+      margin-top: 50px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;">
+      <!-- grid-template-columns: 100px 1fr;"> -->
+      <div style="background-color: aqua;"> grid3.1 </div>
+      <div style="background-color: lightpink;"> grid3.2 </div>
+      <div style="background-color: lightgreen;"> grid3.3 </div>
+      <div style="background-color: lightseagreen;"> grid3.4 </div>
+    </div>
+    <div style="
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 50px 1fr 2fr 1fr;">
+      <div style="background-color: aqua;"> grid4.1 </div>
+      <div style="background-color: lightpink;"> grid4.2 </div>
+      <div style="background-color: lightgreen;"> grid4.3 </div>
+      <div style="background-color: lightseagreen;"> grid4.4 </div>
+      <div style="background-color: lightcoral;"> grid4.5 </div>
+      <div style="background-color: lightsalmon;"> grid4.6 </div>
+    </div>
+  </body>
+</html>

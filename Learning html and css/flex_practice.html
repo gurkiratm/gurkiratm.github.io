@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flexbox Practice</title>
+  </head>
+  <body>
+    <div style="
+        display: flex; margin-bottom: 20px;">
+      <div style="background-color: lightblue;padding: 10px;">
+        flexbox text
+        <p>hello</p>
+      </div>
+      <div style="background-color: lightpink;">
+        flexbox2
+      </div>
+    </div>
+
+    <div style="display: flex; flex-direction: row;">
+      <div style="display: flex; flex-direction: column;background-color:lightblue;">flex1
+        <div style="background-color: lightskyblue;margin-left: 40px;">flex1.1</div>
+        <div style="background-color: lightcoral;margin-left: 40px;">flex1.2</div>
+      </div>
+      <div style="background-color:lightpink;">flex2</div>
+      <div style="background-color:lightgreen;flex: 1;">flex3</div>
+    </div>
+    
+    <div style="display: flex; flex-direction: column;margin-top: 50px;">
+      <div style="display: flex; flex-direction: column;background-color:lightblue;">flex1
+        <div style="background-color: lightskyblue;margin-left: 40px;">flex1.1</div>
+        <div style="background-color: lightcoral;margin-left: 40px;">flex1.2</div>
+      </div>
+      <div style="background-color:lightpink;">flex2</div>
+      <!-- <div style="background-color:lightgreen;">flex3</div> -->
+    </div>
+
+    <div style="display: grid; grid-template-columns: 50px 1fr ;margin-top: 50px;">
+      <div style="background-color:lightblue;">
+        G1
+      </div>
+      <div style="display: flex; flex-direction: column;background-color:lightpink;">G2
+        <div style="background-color: lightskyblue;margin-left: 40px;">F1.1
+          <div style="background-color: blueviolet;display: inline;">D1.1.1</div>
+          <div style="background-color: yellowgreen;display: inline;">D1.1.2</div>
+        </div>
+        <div style="background-color: lightcoral;margin-left: 40px;">F1.2</div>
+      </div>
+      <!-- <div style="background-color:lightgreen;">flex3</div> -->
+       <div style="background-color:lightgreen;">G3</div>
+       <div style="background-color:lightsalmon;">G4</div>
+    </div>
+  </body>
+</ht

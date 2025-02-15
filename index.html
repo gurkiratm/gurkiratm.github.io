@@ -3,19 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Git Web Hosting</title>
+    <title>Gurkirat Github</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #caf1ee;
         }
         header {
             background-color: #333;
             color: #fff;
-            padding: 1rem;
+            /* padding: 1rem; */
+            padding: 1px;
             text-align: center;
+        }
+        .welcome-header{
+            font-family:cursive;
+        }
+        .welcome-header:hover{
+            color: black;   
+            /* box-shadow: 3px 3px 5px blue; */
+            /* margin: 1px; */
         }
         main {
             padding: 2rem;
@@ -33,16 +42,16 @@
 </head>
 <body>
     <header>
-        <h1>Welcome to My Git Web Hosting</h1>
+        <h1 class="welcome-header">welcome to my git web hosting</h1>
     </header>
     <main>
-        <p>This is a simple HTML page hosted on Git.</p>
+        <p>This is a simple html page hosted on git.</p>
     </main>
     <footer>
-        <p>&copy; <span id="year"></span> Gurkirat Singh. All rights reserved.</p>
+        <p>&copy; <span id="year"></span> Gurkirat Singh. all rights reserved.</p>
     </footer>
     <script>
-        document.getElementById('year').textContent = new Date().getFullYear();
+        document.getelementbyid('year').textcontent = new date().getfullyear();
     </script>
 </body>
 </html>

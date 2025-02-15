@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% load static %}
+    <title>Router Manager</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <script src="{% static 'js/script.js' %}" defer></script>
+</head>
+<body>
+    <div class='menu-container'>
+        <div class='menu'>
+        <div class="date">          
+        </div>  
+    </div>
+</div>
+    <div class="header-container">
+    </div>
+    <div class="creds-container">
+        <div class="left">
+            <div class="social">
+                <img src="{% static 'image/Jio_Logo.png' %}" alt="Router Logo" class="logo">
+               
+            </div>
+            <span class="logo-text1">Regression Testing Manager
+                <h2>Jio IP MPLS QA</h2>
+            </span>
+        </div>
+        <div class='links'>
+        <div class="form-container">
+            <form method="post" action="{% url 'login' %}">
+            {% csrf_token %}
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+           
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+           
+            <button type="submit">Login</button>
+        </form>
+        </div>
+      </div>
+    </div>
+ 
+<div class="empty"></div>
+<div class="footer">
+    <p>&copy; 2025 Regression Testing Manager</p>
+</div>
+</body>
+</html>
